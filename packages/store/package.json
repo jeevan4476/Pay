@@ -8,4 +8,8 @@
   "exports": {
     "./balance": "./src/hooks/useBalance"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
