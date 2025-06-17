@@ -8,10 +8,17 @@
     ]
   },
   "include": [
+<<<<<<< HEAD
+    "next-env.d.ts",
+    "next.config.js",
+    "**/*.ts",
+    "**/*.tsx",
+=======
     "**/*.ts",
     "**/*.tsx",
     "next-env.d.ts",
     "next.config.ts",
+>>>>>>> main
     ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]

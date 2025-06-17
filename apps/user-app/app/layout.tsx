@@ -1,9 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
-import { Providers } from "./providers";
+import { Inter } from "next/font/google";
+import { Providers } from "../provider";
 
-const geist = Geist({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Turborepo",
@@ -14,11 +14,11 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}): JSX.Element {
   return (
     <html lang="en">
       <Providers>
-              <body className={geist.className}>{children}</body>
+        <body className={inter.className}>{children}</body>
       </Providers>
     </html>
   );
